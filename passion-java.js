@@ -42,6 +42,7 @@
                     klon.querySelector(".name").textContent = person.gsx$name.$t;
                     klon.querySelector(".id").textContent = person.gsx$id.$t;
                     klon.querySelector(".info").textContent = person.gsx$info.$t;
+                    klon.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
 
                     klon.querySelector("article").addEventListener("click", () => visDetaljer(person));
 
@@ -59,7 +60,7 @@
             popup.querySelector(".pris").textContent = person.gsx$pris.$t;
             popup.querySelector(".oprindelse").textContent = person.gsx$oprindelse.$t;
             popup.querySelector(".lang").textContent = person.gsx$lang.$t;
-            popup.querySelector("img").src = "imgs/large/" + person.gsx$billede.$t + ".jpg";
+            popup.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
         }
 
         //-------------------------------------------------------------------------------------------------------------------------------------//
