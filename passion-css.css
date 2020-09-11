@@ -2,6 +2,37 @@ body {
     background-color: skyblue;
 }
 
+
+/*--------------*/
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: radial-gradient(#f0dda1, #957A43);
+    width: 100vw;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: #111;
+    font-family: "Questrial";
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.menu li a:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+
 /*----------------------------------------------------------------------------------------------------------*/
 
 .splash {
@@ -35,6 +66,15 @@ img {
     margin: 0 auto;
 }
 
+/*--------------------------------------*/
+
+.sectionwrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
 section {
     margin: 0 auto;
     display: grid;
@@ -44,7 +84,7 @@ section {
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-header {
+.nav {
     display: flex;
     flex-wrap: wrap;
 }

@@ -8,16 +8,16 @@
     <title>Babushka</title>
 
     <link rel="stylesheet" href="passion-css.css">
-    <link rel="apple-touch-icon'" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+    <link rel="apple-touch-icon'" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -25,14 +25,30 @@
 </head>
 
 <body>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+    </div>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html#splash">Forside</a></li>
+                <li><a href="index.html#om">Om</a></li>
+                <li> <a href="index.html#eksempler">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="passion-java.js"></script>
+
+    <splash class="splash">
+        <div></div>
+        <img src="" alt="">
+    </splash>
 
 
     <!-------------------------------------------------------------------------------------------------->
+    <div class="sectionwrapper">
 
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo">
-        </div>
 
         <div class="nav">
             <button class="filter" data-kategori="alle">Alle</button>
@@ -43,47 +59,39 @@
             <button class="filter" data-kategori="sideorders">lorem</button>
         </div>
 
+        <h1>Alle</h1>
 
-    </header>
-    ___________________________________________________
-    <script src="passion-java.js"></script>
+        <!-------------------------------------------------------------------------------------------------->
 
-    <splash class="splash">
-        <div></div>
-        <img src="" alt="">
-    </splash>
+        <section></section>
 
-    <h1>Alle</h1>
+        <!-------------------------------------------------------------------------------------------------->
 
-    <!-------------------------------------------------------------------------------------------------->
+        <Section id="popup">
+            <article>
+                <button id="luk">X</button>
+                <img src="" alt="">
+                <div>
+                    <h2></h2>
+                    <h3></h3>
+                    <p>Kr: <span class="pris"></span></p>
+                    <p>Oprindelse: <span class="oprindelse"></span></p>
+                    <p>Historie: <span class="lang"></span></p>
+                </div>
+            </article>
+        </Section>
 
-    <section></section>
+        <!-------------------------------------------------------------------------------------------------->
 
-    <!-------------------------------------------------------------------------------------------------->
+        <template>
+            <article>
+                <h2 class="id"></h2>
+                <p class="name"></p>
+                <img src="" alt="">
+                <p class="info"></p>
+            </article>
+        </template>
+    </div>
+</body>
 
-    <Section id="popup">
-        <article>
-            <button id="luk">X</button>
-            <img src="" alt="">
-            <div>
-                <h2></h2>
-                <h3></h3>
-                <p>Kr: <span class="pris"></span></p>
-                <p>Oprindelse: <span class="oprindelse"></span></p>
-                <p>Historie: <span class="lang"></span></p>
-            </div>
-        </article>
-    </Section>
-
-    <!-------------------------------------------------------------------------------------------------->
-
-    <template>
-        <article>
-            <h2 class="id"></h2>
-            <p class="name"></p>
-            <img src="" alt="">
-            <p class="info"></p>
-        </article>
-    </template>
-
-</body></html>
+</html>
