@@ -10,22 +10,28 @@ body {
 /* FONT */
 
 /* Roc Grotesk Regular */
+/*
 font-family: roc-grotesk,
 sans-serif;
 font-weight: 400;
 font-style: normal;
+*/
 
 /* Roc Grotesk Light */
+/*
 font-family: roc-grotesk,
 sans-serif;
 font-weight: 300;
 font-style: normal;
+*/
 
 /* Roc Grotesk Bold*/
+/*
 font-family: roc-grotesk,
 sans-serif;
 font-weight: 600;
 font-style: normal;
+*/
 
 
 h1 {
@@ -34,6 +40,8 @@ h1 {
     font-weight: 600;
     font-style: normal;
     font-size: 2em;
+    color: ???;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -42,6 +50,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
+    color: ???;
 }
 
 h3 {
@@ -50,6 +59,7 @@ h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 1.17em;
+    color: ???;
 }
 
 p {
@@ -58,6 +68,7 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 1em;
+    color: rgb(128, 128, 128);
 }
 
 /*--------------*/
