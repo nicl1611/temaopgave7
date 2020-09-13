@@ -1,7 +1,64 @@
 body {
     background-color: skyblue;
+
+    /* Vivi forslag til baggrundsfarve */
+    background: rgb(254, 195, 45);
+    background: linear-gradient(180deg, rgba(254, 195, 45, 1) 0%, rgba(254, 195, 45, 1) 25%, rgba(250, 173, 253, 1) 50%, rgba(250, 173, 253, 1) 75%, rgba(15, 93, 255, 1) 100%);
 }
 
+/*--------------*/
+/* FONT */
+
+/* Roc Grotesk Regular */
+font-family: roc-grotesk,
+sans-serif;
+font-weight: 400;
+font-style: normal;
+
+/* Roc Grotesk Light */
+font-family: roc-grotesk,
+sans-serif;
+font-weight: 300;
+font-style: normal;
+
+/* Roc Grotesk Bold*/
+font-family: roc-grotesk,
+sans-serif;
+font-weight: 600;
+font-style: normal;
+
+
+h1 {
+    font-family: roc-grotesk,
+        sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: roc-grotesk,
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: roc-grotesk,
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.17em;
+}
+
+p {
+    font-family: roc-grotesk,
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
 
 /*--------------*/
 
