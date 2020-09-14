@@ -129,9 +129,12 @@ article:hover {
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-
-
 img {
+    width: 100%;
+}
+
+
+.zoom img {
     max-width: 100%;
     transition-duration: .4s;
 
@@ -141,7 +144,7 @@ img {
 
 
 
-img:hover {
+.zoom img:hover {
     opacity: 0.4;
     transform: scale(1.05);
     border-radius: 5px;
@@ -306,9 +309,6 @@ h1 {
 
 
 #popup div {
-
-
-
     margin-left: 20px;
     margin-right: 20px;
 }
