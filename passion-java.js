@@ -71,11 +71,13 @@
 
         function visDetaljer(person) {
             popup.style.display = "block";
-            popup.querySelector("h3").textContent = person.gsx$navn.$t;
             popup.querySelector("h2").textContent = person.gsx$id.$t;
             popup.querySelector(".pris").textContent = person.gsx$pris.$t;
-            popup.querySelector(".oprindelse").textContent = person.gsx$oprindelse.$t;
-            popup.querySelector(".lang").textContent = person.gsx$lang.$t;
+            popup.querySelector(".instagram").textContent = person.gsx$artistinstagram.$t;
+            popup.querySelector(".youtube").textContent = person.gsx$artistyoutube.$t;
+            popup.querySelector(".giphy").textContent = person.gsx$artistgiphy.$t;
+            popup.querySelector(".website").textContent = person.gsx$artistwebsite.$t;
+            popup.querySelector(".shop").textContent = person.gsx$artistshop.$t;
             popup.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
         }
 
