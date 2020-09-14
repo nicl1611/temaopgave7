@@ -39,7 +39,6 @@
 
                     const klon = templatePointer.cloneNode(true).content;
 
-                    klon.querySelector(".name").textContent = person.gsx$name.$t;
                     klon.querySelector(".id").textContent = person.gsx$id.$t;
                     klon.querySelector(".info").textContent = person.gsx$info.$t;
                     klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
