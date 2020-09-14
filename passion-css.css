@@ -33,16 +33,16 @@ h3 {
     width: 100%;
 }
 
-.menu li {
+li {
     display: inline-block;
-
+    padding-left: 80px;
+    padding-right: 50px
 }
 
 .menu li a {
     display: block;
     color: #111;
     text-align: center;
-    padding: 14px 60px;
     text-decoration: none;
     transition-duration: .4s;
     font-size: 16px;
