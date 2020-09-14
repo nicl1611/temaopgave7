@@ -26,19 +26,13 @@ p {
     font-family: monospace;
 }
 
-
-
 h3 {
     font-family: monospace;
 }
 
-
-
 .menu {
     text-align: center;
 }
-
-
 
 .menu ul {
     margin: 0;
@@ -48,16 +42,10 @@ h3 {
     width: 100%;
 }
 
-
-
 .menu li {
     display: inline-block;
 
-
-
 }
-
-
 
 .menu li a {
     display: block;
@@ -65,20 +53,15 @@ h3 {
     text-align: center;
     padding: 14px 60px;
     text-decoration: none;
-    transition-duration: .6s;
+    transition-duration: .4s;
     font-size: 16px;
     font-family: monospace;
 }
 
-
-
 .menu li a:hover {
     background-color: skyblue;
-    color: #ffffff;
-    border-radius: 10px;
+    color: white;
 }
-
-
 
 /*----------------------------------------------------------------------------------------------------------*/
 
@@ -236,7 +219,7 @@ h1 {
     background-color: skyblue;
     border: none;
     color: white;
-    padding: 5px 32px;
+    padding: 3px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
