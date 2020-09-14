@@ -41,12 +41,17 @@
 
                     klon.querySelector(".id").textContent = person.gsx$id.$t;
                     klon.querySelector(".info").textContent = person.gsx$info.$t;
+<<<<<<< HEAD
                     klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
                     //* klon.querySelector(".artistinstagram").textContent = person.gsx$artistinstagram.$t;
                     //* klon.querySelector(".artistyoutube").textContent = person.gsx$artistyoutube.$t;
                     //*  klon.querySelector(".artistgiphy").textContent = person.gsx$artistgiphy.$t;
                     //* klon.querySelector(".artistwebsite").textContent = person.gsx$artistwebsite.$t;
                     //* klon.querySelector(".artistshop").textContent = person.gsx$artistshop.$t;
+=======
+                    //* klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
+                    klon.querySelector(".pris").textContent = person.gsx$pris.$t;
+>>>>>>> origin/master
 
                     klon.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
 
@@ -61,11 +66,13 @@
 
         function visDetaljer(person) {
             popup.style.display = "block";
-            popup.querySelector("h3").textContent = person.gsx$navn.$t;
             popup.querySelector("h2").textContent = person.gsx$id.$t;
             popup.querySelector(".pris").textContent = person.gsx$pris.$t;
-            popup.querySelector(".oprindelse").textContent = person.gsx$oprindelse.$t;
-            popup.querySelector(".lang").textContent = person.gsx$lang.$t;
+            popup.querySelector(".instagram").textContent = person.gsx$artistinstagram.$t;
+            popup.querySelector(".youtube").textContent = person.gsx$artistyoutube.$t;
+            popup.querySelector(".giphy").textContent = person.gsx$artistgiphy.$t;
+            popup.querySelector(".website").textContent = person.gsx$artistwebsite.$t;
+            popup.querySelector(".shop").textContent = person.gsx$artistshop.$t;
             popup.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
         }
 
