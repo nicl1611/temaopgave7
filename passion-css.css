@@ -3,11 +3,7 @@ body {
     background-size: contain;
 }
 
-
-
-
-/*--------------*/
-
+/*----------------------------------------------------------------------------------------------------------*/
 
 
 h1 {
@@ -32,7 +28,7 @@ h3 {
     font-family: monospace;
 }
 
-
+/*----------------------------------------------------------------------------------------------------------*/
 
 .menu {
     text-align: center;
@@ -156,43 +152,7 @@ img {
 
 
 
-/*--------------------------------------*/
-
-
-
-.sectionwrapper {
-    width: 80%;
-    margin: 0 auto;
-}
-
-
-
-section {
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-
-
-
-#om_left {
-    width: 500vw;
-    height: 500vh;
-    background-color: red;
-}
-
-
-
-#om_right {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-}
-
-
-
-
+/*----------------------------------------------------------------------------------------------------------*/
 
 
 

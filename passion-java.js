@@ -22,6 +22,18 @@ document.addEventListener("DOMContentLoaded", loadJSON);
 const link = "https://spreadsheets.google.com/feeds/list/1GvVRM4YQgG5vMIA_p453OByxwNFP4daER7aHthI9nhE/od6/public/values?alt=json";
 
 
+klon.querySelector(".id").textContent = person.gsx$id.$t;
+klon.querySelector(".info").textContent = person.gsx$info.$t;
+
+klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
+//* klon.querySelector(".artistinstagram").textContent = person.gsx$artistinstagram.$t;
+//* klon.querySelector(".artistyoutube").textContent = person.gsx$artistyoutube.$t;
+//*  klon.querySelector(".artistgiphy").textContent = person.gsx$artistgiphy.$t;
+//* klon.querySelector(".artistwebsite").textContent = person.gsx$artistwebsite.$t;
+//* klon.querySelector(".artistshop").textContent = person.gsx$artistshop.$t;
+
+//* klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
+klon.querySelector(".pris").textContent = person.gsx$pris.$t;
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
 
