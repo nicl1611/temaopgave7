@@ -1,26 +1,17 @@
 body {
     background-image: url(img/baggrund-ide.png);
-    background-size: contain;
+    background-size: cover;
 }
 
-
-
-
 /*--------------*/
-
-
 
 h1 {
     font-family: monospace;
 }
 
-
-
 h2 {
     font-family: monospace;
 }
-
-
 
 p {
     font-family: monospace;
