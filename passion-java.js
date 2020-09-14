@@ -104,10 +104,15 @@ function visDetaljer(person) {
     popup.querySelector("h2").textContent = person.gsx$id.$t;
     popup.querySelector(".pris").textContent = person.gsx$pris.$t;
     popup.querySelector(".instagram").textContent = person.gsx$artistinstagram.$t;
+    popup.querySelector(".instagram").href = person.gsx$artistinstagram.$t;
     popup.querySelector(".youtube").textContent = person.gsx$artistyoutube.$t;
+    popup.querySelector(".youtube").href = person.gsx$artistyoutube.$t;
     popup.querySelector(".giphy").textContent = person.gsx$artistgiphy.$t;
+    popup.querySelector(".giphy").href = person.gsx$artistgiphy.$t;
     popup.querySelector(".website").textContent = person.gsx$artistwebsite.$t;
+    popup.querySelector(".website").href = person.gsx$artistwebsite.$t;
     popup.querySelector(".shop").textContent = person.gsx$artistshop.$t;
+    popup.querySelector(".shop").href = person.gsx$artistshop.$t;
     popup.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
 }
 
