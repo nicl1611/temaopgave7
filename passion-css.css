@@ -4,27 +4,41 @@ body {
 }
 
 
+
+
 /*--------------*/
+
+
 
 h1 {
     font-family: monospace;
 }
 
+
+
 h2 {
     font-family: monospace;
 }
+
+
 
 p {
     font-family: monospace;
 }
 
+
+
 h3 {
     font-family: monospace;
 }
 
+
+
 .menu {
     text-align: center;
 }
+
+
 
 .menu ul {
     margin: 0;
@@ -34,10 +48,16 @@ h3 {
     width: 100%;
 }
 
+
+
 .menu li {
     display: inline-block;
 
+
+
 }
+
+
 
 .menu li a {
     display: block;
@@ -50,13 +70,19 @@ h3 {
     font-family: monospace;
 }
 
+
+
 .menu li a:hover {
     background-color: skyblue;
     color: #ffffff;
     border-radius: 10px;
 }
 
+
+
 /*----------------------------------------------------------------------------------------------------------*/
+
+
 
 #splash {
     padding: 40px 0px;
@@ -71,9 +97,15 @@ h3 {
     border: 1px skyblue solid;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
+
 
 /*----------------------------------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+
 
 article {
     border: 1px solid skyblue;
@@ -83,19 +115,31 @@ article {
     border-radius: 3px;
 }
 
+
+
 article:hover {
     box-shadow: 0px 0px 5px 0px skyblue;
     transition-duration: .4s;
 
+
+
 }
 
+
+
 /*----------------------------------------------------------------------------------------------------------*/
+
+
 
 img {
     max-width: 100%;
     transition-duration: .4s;
 
+
+
 }
+
+
 
 img:hover {
     opacity: 0.4;
@@ -103,7 +147,11 @@ img:hover {
     border-radius: 5px;
 }
 
+
+
 /*----------------------------------------------------------------------------------------------------------*/
+
+
 
 .logo {
     width: 10%;
@@ -111,12 +159,18 @@ img:hover {
     transition-duration: 2s;
 }
 
+
+
 /*--------------------------------------*/
+
+
 
 .sectionwrapper {
     width: 80%;
     margin: 0 auto;
 }
+
+
 
 section {
     margin: 0 auto;
@@ -125,11 +179,15 @@ section {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
+
+
 #om_left {
     width: 500vw;
     height: 500vh;
     background-color: red;
 }
+
+
 
 #om_right {
     width: 100px;
@@ -142,7 +200,11 @@ section {
 
 
 
+
+
 /*----------------------------------------------------------------------------------------------------------*/
+
+
 
 .nav {
     display: flex;
@@ -150,7 +212,11 @@ section {
     transition-duration: .4s;
 }
 
+
+
 /*----------------------------------------------------------------------------------------------------------*/
+
+
 
 h1 {
     margin-left: 5px;
@@ -158,7 +224,11 @@ h1 {
     margin-bottom: 10px;
 }
 
+
+
 /*----------------------------------------------------------------------------------------------------------*/
+
+
 
 .filter {
     display: flex;
@@ -179,20 +249,32 @@ h1 {
     font-family: monospace;
 }
 
+
+
 .filter:hover {
     background-color: white;
     border: 1px solid skyblue;
     color: black;
 
+
+
 }
 
+
+
 /*----------------------------------------------------------------------------------------------------------*/
+
+
 
 .valgt {
     background-color: black;
 }
 
+
+
 /*----------------------------------------------------------------------------------------------------------*/
+
+
 
 #popup {
     position: fixed;
@@ -204,6 +286,8 @@ h1 {
     display: none;
 }
 
+
+
 #popup article {
     width: 70vw;
     height: 50vh;
@@ -213,17 +297,27 @@ h1 {
     position: relative;
 }
 
+
+
 #popup img {
     max-width: 50%;
 }
 
+
+
 #popup div {
+
+
 
     margin-left: 20px;
     margin-right: 20px;
 }
 
+
+
 /*----------------------------------------------------------------------------------------------------------*/
+
+
 
 #luk {
     position: absolute;
@@ -241,6 +335,8 @@ h1 {
     margin: 4px 40px 4px 2px;
     border-radius: 3px;
 }
+
+
 
 #luk:hover {
     opacity: 0.6;
