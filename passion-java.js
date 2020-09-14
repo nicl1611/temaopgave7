@@ -39,15 +39,14 @@
 
                     const klon = templatePointer.cloneNode(true).content;
 
-                    klon.querySelector(".name").textContent = person.gsx$name.$t;
                     klon.querySelector(".id").textContent = person.gsx$id.$t;
                     klon.querySelector(".info").textContent = person.gsx$info.$t;
                     klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
-                    klon.querySelector(".artistinstagram").textContent = person.gsx$artistinstagram.$t;
-                    klon.querySelector(".artistyoutube").textContent = person.gsx$artistyoutube.$t;
-                    klon.querySelector(".artistgiphy").textContent = person.gsx$artistgiphy.$t;
-                    klon.querySelector(".artistwebsite").textContent = person.gsx$artistwebsite.$t;
-                    klon.querySelector(".artistshop").textContent = person.gsx$artistshop.$t;
+                    //* klon.querySelector(".artistinstagram").textContent = person.gsx$artistinstagram.$t;
+                    //* klon.querySelector(".artistyoutube").textContent = person.gsx$artistyoutube.$t;
+                    //*  klon.querySelector(".artistgiphy").textContent = person.gsx$artistgiphy.$t;
+                    //* klon.querySelector(".artistwebsite").textContent = person.gsx$artistwebsite.$t;
+                    //* klon.querySelector(".artistshop").textContent = person.gsx$artistshop.$t;
 
                     klon.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
 
