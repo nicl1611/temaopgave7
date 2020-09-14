@@ -49,16 +49,6 @@
                     klon.querySelector(".artistwebsite").textContent = person.gsx$artistwebsite.$t;
                     klon.querySelector(".artistshop").textContent = person.gsx$artistshop.$t;
 
-                    /*---   Filtre
-
-                    klon.querySelector(".color1").textContent = person.gsx$color1.$t;
-                    klon.querySelector(".color2").textContent = person.gsx$color2.$t;
-                    klon.querySelector(".color3").textContent = person.gsx$color3.$t;
-                    klon.querySelector(".motive1").textContent = person.gsx$motive1.$t;
-                    klon.querySelector(".motive2").textContent = person.gsx$motive2.$t;
-
-                        ---*/
-
                     klon.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
 
                     klon.querySelector("article").addEventListener("click", () => visDetaljer(person));
