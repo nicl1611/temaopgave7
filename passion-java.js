@@ -1,172 +1,201 @@
-       let filter = "alle";
+    window.addEventListener("load", sidenVises);
 
 
+    function sidenVises() {
+        console.log("sidenVises");
 
-       let personer;
+        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+    }
 
 
+    function toggleMenu() {
+        console.log("toggleMenu");
 
-       let container = document.querySelector("section");
-       let temp = document.querySelector("template");
+        document.querySelector("#menu").classList.toggle("hide");
 
+        let erSkjult = document.querySelector("#menu").classList.contains("hide");
 
 
-       document.addEventListener("DOMContentLoaded", loadJSON);
+        if (erSkjult == true) {
+            document.querySelector("#menuknap").textContent = "☰";
+        } else {
+            document.querySelector("#menuknap").textContent = "✖";
+        }
 
+    }
 
 
-       //-------------------------------------------------------------------------------------------------------------------------------------//
 
 
+    let filter = "alle";
 
-       const link = "https://spreadsheets.google.com/feeds/list/1GvVRM4YQgG5vMIA_p453OByxwNFP4daER7aHthI9nhE/od6/public/values?alt=json";
 
 
-       klon.querySelector(".id").textContent = person.gsx$id.$t;
-       klon.querySelector(".info").textContent = person.gsx$info.$t;
+    let personer;
 
-       klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
-       //* klon.querySelector(".artistinstagram").textContent = person.gsx$artistinstagram.$t;
-       //* klon.querySelector(".artistyoutube").textContent = person.gsx$artistyoutube.$t;
-       //*  klon.querySelector(".artistgiphy").textContent = person.gsx$artistgiphy.$t;
-       //* klon.querySelector(".artistwebsite").textContent = person.gsx$artistwebsite.$t;
-       //* klon.querySelector(".artistshop").textContent = person.gsx$artistshop.$t;
 
-       //* klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
-       klon.querySelector(".pris").textContent = person.gsx$pris.$t;
 
-       //-------------------------------------------------------------------------------------------------------------------------------------//
+    let container = document.querySelector("section");
+    let temp = document.querySelector("template");
 
 
 
-       async function loadJSON() {
-           const JSONData = await fetch(link);
-           personer = await JSONData.json();
-           addEventListenersToButons();
-           vis(personer);
-           document.querySelector("#luk").addEventListener("click", () => popup.style.display = "none");
-       }
+    document.addEventListener("DOMContentLoaded", loadJSON);
 
 
 
-       //-------------------------------------------------------------------------------------------------------------------------------------//
+    //-------------------------------------------------------------------------------------------------------------------------------------//
 
 
 
-       function vis(personer) {
+    const link = "https://spreadsheets.google.com/feeds/list/1GvVRM4YQgG5vMIA_p453OByxwNFP4daER7aHthI9nhE/od6/public/values?alt=json";
 
 
+    klon.querySelector(".id").textContent = person.gsx$id.$t;
+    klon.querySelector(".info").textContent = person.gsx$info.$t;
 
-           const templatePointer = document.querySelector("template");
+    klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
+    //* klon.querySelector(".artistinstagram").textContent = person.gsx$artistinstagram.$t;
+    //* klon.querySelector(".artistyoutube").textContent = person.gsx$artistyoutube.$t;
+    //*  klon.querySelector(".artistgiphy").textContent = person.gsx$artistgiphy.$t;
+    //* klon.querySelector(".artistwebsite").textContent = person.gsx$artistwebsite.$t;
+    //* klon.querySelector(".artistshop").textContent = person.gsx$artistshop.$t;
 
+    //* klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
+    klon.querySelector(".pris").textContent = person.gsx$pris.$t;
 
+    //-------------------------------------------------------------------------------------------------------------------------------------//
 
-           const listPointer = document.querySelector("section");
 
 
+    async function loadJSON() {
+        const JSONData = await fetch(link);
+        personer = await JSONData.json();
+        addEventListenersToButons();
+        vis(personer);
+        document.querySelector("#luk").addEventListener("click", () => popup.style.display = "none");
+    }
 
-           listPointer.innerHTML = "";
 
 
+    //-------------------------------------------------------------------------------------------------------------------------------------//
 
-           personer.feed.entry.forEach(person => {
 
 
+    function vis(personer) {
 
-               if (filter == "alle" || filter == person.gsx$kategori.$t) {
 
 
+        const templatePointer = document.querySelector("template");
 
-                   console.log(person);
 
 
+        const listPointer = document.querySelector("section");
 
-                   const klon = templatePointer.cloneNode(true).content;
 
 
+        listPointer.innerHTML = "";
 
-                   klon.querySelector(".id").textContent = person.gsx$id.$t;
-                   klon.querySelector(".info").textContent = person.gsx$info.$t;
-                   //* klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
-                   klon.querySelector(".pris").textContent = person.gsx$pris.$t;
 
 
+        personer.feed.entry.forEach(person => {
 
-                   klon.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
 
 
+            if (filter == "alle" || filter == person.gsx$kategori.$t) {
 
-                   klon.querySelector("article").addEventListener("click", () => visDetaljer(person));
 
 
+                console.log(person);
 
-                   listPointer.appendChild(klon);
-               }
-           })
-       }
 
 
+                const klon = templatePointer.cloneNode(true).content;
 
-       //-------------------------------------------------------------------------------------------------------------------------------------//
 
 
+                klon.querySelector(".id").textContent = person.gsx$id.$t;
+                klon.querySelector(".info").textContent = person.gsx$info.$t;
+                //* klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
+                klon.querySelector(".pris").textContent = person.gsx$pris.$t;
 
-       function visDetaljer(person) {
-           popup.style.display = "block";
-           popup.querySelector("h2").textContent = person.gsx$id.$t;
-           popup.querySelector(".pris").textContent = person.gsx$pris.$t;
-           popup.querySelector(".instagram").textContent = person.gsx$artistinstagram.$t;
-           popup.querySelector(".instagram").href = person.gsx$artistinstagram.$t;
-           popup.querySelector(".youtube").textContent = person.gsx$artistyoutube.$t;
-           popup.querySelector(".youtube").href = person.gsx$artistyoutube.$t;
-           popup.querySelector(".giphy").textContent = person.gsx$artistgiphy.$t;
-           popup.querySelector(".giphy").href = person.gsx$artistgiphy.$t;
-           popup.querySelector(".website").textContent = person.gsx$artistwebsite.$t;
-           popup.querySelector(".website").href = person.gsx$artistwebsite.$t;
-           popup.querySelector(".shop").textContent = person.gsx$artistshop.$t;
-           popup.querySelector(".shop").href = person.gsx$artistshop.$t;
-           popup.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
-       }
 
 
+                klon.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
 
-       //-------------------------------------------------------------------------------------------------------------------------------------//
 
 
+                klon.querySelector("article").addEventListener("click", () => visDetaljer(person));
 
-       function addEventListenersToButons() {
-           document.querySelectorAll(".filter").forEach((btn) => {
-               btn.addEventListener("click", filterBTNs);
-           })
-       }
 
 
+                listPointer.appendChild(klon);
+            }
+        })
+    }
 
-       //-------------------------------------------------------------------------------------------------------------------------------------//
 
 
+    //-------------------------------------------------------------------------------------------------------------------------------------//
 
-       function filterBTNs() {
-           filter = this.dataset.kategori;
 
 
+    function visDetaljer(person) {
+        popup.style.display = "block";
+        popup.querySelector("h2").textContent = person.gsx$id.$t;
+        popup.querySelector(".pris").textContent = person.gsx$pris.$t;
+        popup.querySelector(".instagram").textContent = person.gsx$artistinstagram.$t;
+        popup.querySelector(".instagram").href = person.gsx$artistinstagram.$t;
+        popup.querySelector(".youtube").textContent = person.gsx$artistyoutube.$t;
+        popup.querySelector(".youtube").href = person.gsx$artistyoutube.$t;
+        popup.querySelector(".giphy").textContent = person.gsx$artistgiphy.$t;
+        popup.querySelector(".giphy").href = person.gsx$artistgiphy.$t;
+        popup.querySelector(".website").textContent = person.gsx$artistwebsite.$t;
+        popup.querySelector(".website").href = person.gsx$artistwebsite.$t;
+        popup.querySelector(".shop").textContent = person.gsx$artistshop.$t;
+        popup.querySelector(".shop").href = person.gsx$artistshop.$t;
+        popup.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
+    }
 
-           document.querySelector("h1").textContent = this.textContent;
 
 
+    //-------------------------------------------------------------------------------------------------------------------------------------//
 
-           document.querySelectorAll(".filter").forEach((btn) => {
 
 
+    function addEventListenersToButons() {
+        document.querySelectorAll(".filter").forEach((btn) => {
+            btn.addEventListener("click", filterBTNs);
+        })
+    }
 
-               btn.classList.remove("valgt");
-           })
 
 
+    //-------------------------------------------------------------------------------------------------------------------------------------//
 
-           this.classList.add("valgt");
 
 
+    function filterBTNs() {
+        filter = this.dataset.kategori;
 
-           vis(personer);
-       }
+
+
+        document.querySelector("h1").textContent = this.textContent;
+
+
+
+        document.querySelectorAll(".filter").forEach((btn) => {
+
+
+
+            btn.classList.remove("valgt");
+        })
+
+
+
+        this.classList.add("valgt");
+
+
+
+        vis(personer);
+    }
