@@ -41,7 +41,7 @@
 
                     klon.querySelector(".id").textContent = person.gsx$id.$t;
                     klon.querySelector(".info").textContent = person.gsx$info.$t;
-                    klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
+                    //* klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
                     klon.querySelector(".pris").textContent = person.gsx$pris.$t;
 
                     klon.querySelector("img").src = "img/kvadratisk/" + person.gsx$image.$t + ".jpg";
