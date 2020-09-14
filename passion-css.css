@@ -157,27 +157,29 @@ section {
 }
 
 
+/*-------------------------------------------------------------------------------------------------*/
 
-#om_left {
-    width: 500vw;
-    height: 500vh;
-    background-color: red;
+#omSection img {
+    width: 47%;
 }
 
-
-
-#om_right {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+#omSection {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
 }
 
+.photo {
+    flex-grow: 0.3;
+    flex-basis: 300px;
+    margin-left: 10%;
+}
 
-
-
-
-
-
+.txt {
+    flex-grow: 0.3;
+    flex-basis: 300px;
+    margin-left: 10%;
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
