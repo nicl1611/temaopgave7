@@ -72,10 +72,72 @@ h3 {
 }
 
 
+/*--------------------------------------------- BURGERMENU -------------------------------------------------*/
 
-/*----------------------------------------------------------------------------------------------------------*/
 
 
+@media (min-width:600px) {
+    #menuknap {
+        display: none;
+    }
+
+
+    #menu.hide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}
+
+
+.hide {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#menuknap {
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 6px;
+}
+
+#menu {
+    margin-top: 25px;
+    list-style-type: none;
+    transition: transform 0.4s;
+    transform-origin: top left;
+    margin: 0;
+    padding: 10px 10px;
+    border-top: solid 1px skyblue;
+    width: 100%;
+}
+
+a {
+    color: black;
+    font-family: monospace;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: lighter;
+    opacity: 0.5;
+}
+
+a:hover {
+    border-bottom: solid skyblue 2px;
+    opacity: 1;
+
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: row;
+    text-decoration: none;
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 
