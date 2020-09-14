@@ -42,6 +42,7 @@
                     klon.querySelector(".id").textContent = person.gsx$id.$t;
                     klon.querySelector(".info").textContent = person.gsx$info.$t;
                     klon.querySelector(".boomerang").textContent = person.gsx$boomerang.$t;
+                    popup.querySelector(".pris").textContent = person.gsx$pris.$t;
                     //* klon.querySelector(".artistinstagram").textContent = person.gsx$artistinstagram.$t;
                     //* klon.querySelector(".artistyoutube").textContent = person.gsx$artistyoutube.$t;
                     //*  klon.querySelector(".artistgiphy").textContent = person.gsx$artistgiphy.$t;
