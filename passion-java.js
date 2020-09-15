@@ -24,6 +24,18 @@ function toggleMenu() {
 
 }
 
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+
+    document.querySelector(".filternav-content").classList.remove("hide2");
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+
+    document.querySelector(".filternav-content", ".openNav").classList.add("hide2");
+}
+
 
 let filter = "alle";
 
