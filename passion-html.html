@@ -55,9 +55,13 @@
 
     <!-------------------------------------------------------------------------------------------------->
 
-    <div class="sectionwrapper">
+    <div id="myNav" class="overlay">
 
-        <div class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+        <span onclick="openNav()" class="openNav">FILTERS</span>
+
+        <div class="filternav-content hide2">
             <button class="filter" data-kategori="alle">Alle</button>
             <button class="filter" data-kategori="Dyr">Dyr</button>
             <button class="filter" data-kategori="Realistisk">Realistisk</button>
@@ -65,6 +69,7 @@
             <button class="filter" data-kategori="Kærlighed">Kærlighed</button>
             <button class="filter" data-kategori="Blomster">Blomster</button>
         </div>
+
 
         <h1>Alle</h1>
 
@@ -109,6 +114,4 @@
             </article>
         </template>
     </div>
-</body>
-
-</html>
+</body></html>
