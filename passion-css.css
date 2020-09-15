@@ -149,18 +149,18 @@ a:active {
     grid-auto-flow: 1fr;
 }
 
-#om {
+#omSection {
     display: flex;
 }
 
-#om_left {
+.photo {
     grid-column: span 2;
     grid-row: span 4;
     background-color: #ffffff;
     padding: 20px;
 }
 
-#om_right {
+.txt {
     grid-column: span 2;
     grid-row: span 4;
     background-color: #ffffff;
