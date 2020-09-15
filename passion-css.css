@@ -145,10 +145,11 @@ nav {
 
 article {
     border: 1px solid skyblue;
-    padding: 10px;
+    padding: 20px;
     transition-duration: .4s;
     background-color: white;
     border-radius: 3px;
+    padding-bottom: 10px;
 }
 
 
@@ -363,17 +364,18 @@ h1 {
     color: white;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 40px 4px 2px;
     border-radius: 3px;
+    opacity: 0.2;
 }
 
 
 
 #luk:hover {
-    opacity: 0.6;
+    opacity: 1;
 }
