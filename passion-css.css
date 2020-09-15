@@ -12,10 +12,6 @@ img {
 
 body {
     background-color: skyblue;
-
-    /* Vivi forslag til baggrundsfarve */
-    background: rgb(254, 195, 45);
-    background: linear-gradient(180deg, rgba(254, 195, 45, 1) 0%, rgba(254, 195, 45, 1) 25%, rgba(250, 173, 253, 1) 50%, rgba(250, 173, 253, 1) 75%, rgba(15, 93, 255, 1) 100%);
 }
 
 footer {
