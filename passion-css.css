@@ -15,27 +15,6 @@ body {
     background-size: cover;
 }
 
-footer {
-    height: 200px;
-    padding: 10px;
-    border: 1px solid #ffffff;
-    margin: 10px;
-}
-
-#footer {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-evenly;
-}
-
-
-#footer-contact,
-#footer-follow,
-#footer-find-us {
-    align-self: flex-start;
-}
-
 /***** Vivi forslag *****/
 /***** FONT *****/
 
@@ -149,6 +128,54 @@ a:active {
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 
 }
+
+/***** FOOTER *****/
+
+footer {
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    margin: 10px;
+    background-color: skyblue;
+}
+
+#footer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#footer-contact a:link,
+#footer-follow a:link {
+    font-family: roc-grotesk,
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.8em;
+    color: rgb(64, 64, 64);
+    margin-bottom: 20px;
+    display: block;
+    text-transform: none;
+}
+
+#footer-contact a:visited,
+#footer-follow a:visited {
+
+    color: #000000;
+}
+
+#footer-contact a:hover,
+#footer-follow a:hover {
+    text-decoration: underline;
+}
+
+#footer-contact a:active,
+#footer-follow a:active {
+    color: #ffffff;
+}
+
 
 /***** Vivi forslag slut *****/
 
