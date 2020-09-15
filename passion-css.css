@@ -17,10 +17,23 @@ body {
 
 footer {
     height: 200px;
-    text-align: center;
     padding: 10px;
     border: 1px solid #ffffff;
     margin: 10px;
+}
+
+#footer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+
+#footer-contact,
+#footer-follow,
+#footer-find-us {
+    align-self: flex-start;
 }
 
 /***** Vivi forslag *****/
