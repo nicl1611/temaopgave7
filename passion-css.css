@@ -276,7 +276,7 @@ section {
 
 #contactSection {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-color: white;
     padding: 50px;
 }
@@ -289,6 +289,16 @@ section {
 
 #contactSection p + h2 {
     margin-top: 50px;
+}
+
+iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
 }
 
 
