@@ -29,6 +29,25 @@
         <img src="img/logo.png" alt="Logo">
     </div>
 
+
+    <nav>
+
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hide">
+            <li>
+                <a href="passion-html.html" style="text-decoration: none;">HOME</a>
+            </li>
+
+            <li>
+                <a href="om.html" style="text-decoration: none;">ABOUT</a>
+            </li>
+
+            <li>
+                <a href="Kontakt.html" style="text-decoration: none;">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
     <div id="menu">
         <nav>
             <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
@@ -45,9 +64,13 @@
 
     <!-------------------------------------------------------------------------------------------------->
 
-    <div class="sectionwrapper">
+    <div id="myNav" class="overlay">
 
-        <div class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+        <span onclick="openNav()" class="openNav">FILTERS</span>
+
+        <div class="filternav-content hide2">
             <button class="filter" data-kategori="alle">Alle</button>
             <button class="filter" data-kategori="Dyr">Dyr</button>
             <button class="filter" data-kategori="Realistisk">Realistisk</button>
@@ -55,6 +78,7 @@
             <button class="filter" data-kategori="Kærlighed">Kærlighed</button>
             <button class="filter" data-kategori="Blomster">Blomster</button>
         </div>
+
 
         <h1>Alle</h1>
 
@@ -64,6 +88,7 @@
 
         <!-------------------------------------------------------------------------------------------------->
         <Section id="popup">
+<<<<<<< HEAD
             <article>
                 <button id="luk">X</button>
                 <img src="" alt="">
@@ -79,9 +104,25 @@
                 </div>
             </article>
         </Section>
+=======
+                        <article>
+                                <button id="luk">X</button>
+                                <img src="" alt="">
+                                <div>
+                                        <h2></h2>
+                                        <h3></h3>
+                                        <a class="instagram" href=""></a>
+                                        <a class="youtube" href=""></a>
+                                        <a class="giphy" href=""></a>
+                                        <a class="website" href=""></a>
+                                        <a class="shop" href=""></a>
+                                        <h4>Cost: <span class="pris"></span></h4>
+                                    </div>
+                            </article>
+                    </Section>
+>>>>>>> origin/master
 
         <!-------------------------------------------------------------------------------------------------->
-
         <template>
             <article>
                 <h3 class="id"></h3>
