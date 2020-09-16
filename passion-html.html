@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <title>Stickermania ☺︎ home</title>
 
     <link rel="stylesheet" href="passion-css.css">
+
     <link rel="apple-touch-icon'" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -25,12 +27,13 @@
 </head>
 
 <body>
+    <!-- LOGO -->
     <div class="logo">
         <img src="img/logo.png" alt="Logo">
     </div>
 
+    <!-- BURGERMENU - VISES I MOBIL VERSION -->
     <nav>
-
         <div id="menuknap">☰</div>
         <ul id="menu" class="hide">
             <li>
@@ -47,37 +50,46 @@
         </ul>
     </nav>
 
+    <!-- MENU - VISES I DESKTOP VERSION -->
+    <div id="menu">
+        <nav>
+            <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
+            <button onclick="window.location.href='om.html';" class="filter">About</button>
+            <button onclick="window.location.href='Kontakt.html';" class="filter">Contact</button>
+        </nav>
+    </div>
+
+    <!-- SPLASHBILLEDE -->
     <div id="splash">
         <div></div>
     </div>
 
+    <!-- LINK TIL JAVASCRIPT FIL -->
     <script src="passion-java.js"></script>
 
     <!-------------------------------------------------------------------------------------------------->
+    <div class="sectionwrapper">
 
-    <div id="myNav" class="overlay">
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-
-        <span onclick="openNav()" class="openNav">FILTERS</span>
-
-        <div class="filternav-content hide2">
-            <button class="filter" data-kategori="alle">Alle</button>
-            <button class="filter" data-kategori="Dyr">Dyr</button>
-            <button class="filter" data-kategori="Realistisk">Realistisk</button>
-            <button class="filter" data-kategori="Holografisk">Holografisk</button>
-            <button class="filter" data-kategori="Kærlighed">Kærlighed</button>
-            <button class="filter" data-kategori="Blomster">Blomster</button>
+        <!-- FILTRERING I FORM AF KNAPPER -->
+        <div class="nav">
+            <button class="filter" data-kategori="alle">All</button>
+            <button class="filter" data-kategori="Animals">Animals</button>
+            <button class="filter" data-kategori="Magic">Magic</button>
+            <button class="filter" data-kategori="Mixed">Mixed</button>
+            <button class="filter" data-kategori="Nature">Nature</button>
+            <button class="filter" data-kategori="Sheet">Sheet</button>
         </div>
 
-
-        <h1>Alle</h1>
-
+        <!-- H1 HVOR INDHOLDET SKIFTES UD ALT EFTER HVILKET FILTER, DER ER VALGT -->
+        <h1>All</h1>
         <!-------------------------------------------------------------------------------------------------->
 
+        <!-- TOM SECTION, HVOR ALLE ELEMENTER BLIVER HENTET IND MED JSON -->
         <section></section>
 
         <!-------------------------------------------------------------------------------------------------->
+
+        <!-- POPUP VED SINGLE VIEW -->
         <Section id="popup">
             <article>
                 <button id="luk">X</button>
@@ -85,23 +97,17 @@
                 <div>
                     <h2></h2>
                     <h3></h3>
-                    <a class="instagram" href="">Instagram</a>
-                    <p></p>
-                    <a class="youtube" href="">YouTube</a>
-                    <p></p>
-                    <a class="giphy" href="">Giphy</a>
-                    <p></p>
-                    <a class="website" href="">Website</a>
-                    <p></p>
-                    <a class="shop" href="">Shop</a>
-                    <p>Price: <span class="pris"></span></p>
+                    <a class="instagram" href=""></a>
+                    <a class="youtube" href=""></a>
+                    <a class="giphy" href=""></a>
+                    <a class="website" href=""></a>
+                    <a class="shop" href=""></a>
+                    <h4>Cost: <span class="pris"></span></h4>
                 </div>
             </article>
         </Section>
-
         <!-------------------------------------------------------------------------------------------------->
-
-
+        <!-- TEMPLATE PÅ FORSIDEN MED LOOP VIEW -->
         <template>
             <article>
                 <h3 class="id"></h3>
@@ -109,32 +115,33 @@
                     <img src="" alt="">
                 </div>
                 <p class="info"></p>
-                <h3 class="pris"></h3>
+                <h4 class="pris"></h4>
                 <!-- <p class="boomerang"></p> -->
             </article>
         </template>
     </div>
 
+    <!-- FOOTER -->
     <footer>
         <div id="footer">
             <div id="footer-contact">
                 <h3>Write us!</h3>
-                <p>E-mail us at</p><a href="mailto:contact@stickermania.com" target="_blank">contact@stickermania.com</a>
+                <a href="Kontakt.html"><img src="img/mail-icon.png" alt="mail icon" target="_blank" style="width:50px;height: 50px;"></a>
             </div>
-            <div id="footer-follow">
-                <h3>Follow us!</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-            </div>
-            <div id="footer-find-us">
-                <h3>Find us!</h3>
-                <address>
-                    <p>Lygten 16</p>
-                    <p>2400 Copenhagen</p>
-                    <p>Denmark</p>
-                </address>
-            </div>
+        </div>
+        <div id="footer-follow">
+            <h3>Follow us!</h3>
+            <a href="www.facebook.com"><img src="img/facebook-icon.jpg" alt="facebook icon" target="_blank" style="width:42px;height:42px;"></a>
+            <a href="www.instagram.com"><img src="img/instagram-icon.jpg" target="_blank" alt="instagram icon" style="width:42px;height:42px;"></a>
+            <a href="www.linkedin.com"><img src="img/linkedin-icon.png" target="_blank" alt="linkedin icon" style="width:43px;height:43px;"></a>
+        </div>
+        <div id="footer-find-us">
+            <h3>Find us!</h3>
+            <address>
+                <p>Lygten 16</p>
+                <p>2400 Copenhagen</p>
+                <p>Denmark</p>
+            </address>
         </div>
     </footer>
 </body></html>
