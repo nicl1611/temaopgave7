@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Stickermania - about</title>
+    <title>Stickermania ☺︎ about</title>
 
     <link rel="stylesheet" href="passion-css.css">
 
@@ -26,14 +26,15 @@
 </head>
 
 <body>
-    <script src="passion-java.js"></script>
-
+    <!-- LOGO -->
     <div class="logo">
-        <img src="img/logo.png" alt="Logo">
+        <a href="passion-html.html">
+            <img src="img/logo.png" alt="Logo">
+        </a>
     </div>
 
+    <!-- BURGERMENU - VISES I MOBIL VERSION -->
     <nav>
-
         <div id="menuknap">☰</div>
         <ul id="menu" class="hide">
             <li>
@@ -50,48 +51,74 @@
         </ul>
     </nav>
 
+    <!-- MENU - VISES I DESKTOP VERSION -->
+    <div id="menu">
+        <nav>
+            <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
+            <button onclick="window.location.href='om.html';" class="filter">About</button>
+            <button onclick="window.location.href='Kontakt.html';" class="filter">Contact</button>
+        </nav>
+    </div>
 
+    <!-- SPLASHBILLEDE -->
     <splash class="splash">
-        <div></div>
-    </splash>
+        <div id="splash">
+            <div></div>
+        </div>
+        <!------------------------------------------------------------------------->
+        <div class="sectionwrapper">
+            <h1>About Sticker Mania</h1>
+            <article id="omSection">
+                <div class="photo">
+                    <img src="img/om/IMG_5052.jpg" alt="About Stickermania image">
+                    <img src="img/om/IMG_5054.jpg" alt="About Stickermania image">
+                    <img src="img/om/IMG_5158.jpg" alt="About Stickermania image">
+                </div>
+                <div class="txt">
+                    <p>We are four enthusiasts who are really happy with stickers in all shapes and sizes.</p>
 
+                    <p>It started as a hobby but has quickly become a bigger passion as we found out how big a community there actually is within stickers.</p>
 
-    <!-------------------------------------------------------------------------------------------------->
+                    <p>These are our own collections, which we share here on the site.</p>
 
-    <h1>About Stickermania</h1>
+                    <p>We have bought and paid for all the stickers ourselves, nothing is sponsored (unless otherwise stated) and we have taken all the pictures and written all the texts ourselves.</p>
 
-    <section>
+                    <p>The goal of our site is to create more awareness around handmade stickers and the small shops with self-employed people around the world. Especially during the Covid-19 Pandemic it is important to support locally.</p>
 
-        <div>
-            <img src="img/om/IMG_5052.jpg" alt="">
-            <img src="img/om/IMG_5054.jpg" alt="">
-            <img src="img/om/IMG_5158.jpg" alt="">
+                    <p>We hope you find some artists on this page that you will support.</p>
+
+                    <div class="greeting">
+                        <h3>Love</h3><img src="img/greeting.gif" alt="Stickermania greeting as a gif">
+                    </div>
+
+                </div>
+            </article>
         </div>
 
-        <div>
-
-            <p>Vi er fire entusiaster, som er rigtig glade for klistermærker i alle afskygninger. Det startede som en hobby, men er hurtigt blevet til en større passion, da vi fandt ud af, hvor stort et community, der faktisk findes inden for klistermærker.</p>
-
-            <p>Det er vores egne samlinger, som vi deler ud af her på sitet. Vi har selv købt og betalt alle klistermærker, intet er sponsoreret (medmindre andet er angivet), og vi har selv taget alle billeder og skrevet alle tekster.</p>
-
-            <p>Målet med vores site er, at skabe mere opmærksomhed omkring håndlavede klistermærker og de små shops med selvstændige rundt omkring i verden. Især under Covid-19 Pandemien er det jo vigtigt, at støtte lokalt.</p>
-
-            <p>Vi håber, at du kan finde nogle kunstnere her på siden, som du vil støtte.</p>
-
-            <h3>Kærlig hilsen</h3>
-            <p>Stickermania</p>
-
-            <h3>Kærlig hilsen</h3>
-            <!-- Vivi note - vi kan sætte logoet ind som en gif eller med en css animation på -->
-            <div class="hilsen"><img src="hilsen1.png">
+        <!-- FOOTER -->
+        <footer>
+            <div id="footer">
+                <div id="footer-contact">
+                    <h3>Write us!</h3>
+                    <a href="Kontakt.html"><img src="img/mail-icon.png" alt="mail icon" target="_blank" style="width:50px;height: 50px;"></a>
+                </div>
             </div>
-        </div>
+            <div id="footer-follow">
+                <h3>Follow us!</h3>
+                <a href="www.facebook.com"><img src="img/facebook-icon.jpg" alt="facebook icon" target="_blank" style="width:42px;height:42px;"></a>
+                <a href="www.instagram.com"><img src="img/instagram-icon.jpg" target="_blank" alt="instagram icon" style="width:42px;height:42px;"></a>
+                <a href="www.linkedin.com"><img src="img/linkedin-icon.png" target="_blank" alt="linkedin icon" style="width:43px;height:43px;"></a>
+            </div>
+            <div id="footer-find-us">
+                <h3>Find us!</h3>
+                <address>
+                    <p>Lygten 16</p>
+                    <p>2400 Copenhagen</p>
+                    <p>Denmark</p>
+                </address>
+            </div>
+        </footer>
 
-        <p></p>
-
-
-    </section>
-
-    <footer></footer>
-    <script src="passion-java.js"></script>
+        <!-- LINK TIL JAVASCRIPT FIL -->
+        <script src="passion-java.js"></script>
 </body></html>
