@@ -33,10 +33,10 @@ h1 {
 h2 {
     font-family: roc-grotesk,
         sans-serif;
-    font-weight: 400;
+    font-weight: bolder;
     font-style: normal;
     font-size: 1.5em;
-    color: #faadfd;
+    color: #0f5dff;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -362,7 +362,7 @@ section {
     position: absolute;
     top: 1.5rem;
     right: 0rem;
-    background-color: #C1272D;
+    background-color: #fec32d;
     color: white;
     border: none;
     color: white;
