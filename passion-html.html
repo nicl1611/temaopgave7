@@ -1,24 +1,11 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-
-
-
-
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-
-
     <title>Stickermania ☺︎ home</title>
-
-
-
-
 
     <link rel="stylesheet" href="passion-css.css">
     <link rel="apple-touch-icon'" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -37,58 +24,44 @@
     <link rel="manifest" href="img/favicons/manifest.json">
 </head>
 
-
-
-
-
 <body>
     <div class="logo">
         <img src="img/logo.png" alt="Logo">
     </div>
 
+    <nav>
 
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hide">
+            <li>
+                <a href="passion-html.html" style="text-decoration: none;">HOME</a>
+            </li>
 
+            <li>
+                <a href="om.html" style="text-decoration: none;">ABOUT</a>
+            </li>
 
-
-    <div id="menu">
-        <nav>
-            <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
-            <button onclick="window.location.href='om.html';" class="filter">About</button>
-            <button onclick="window.location.href='Kontakt.html';" class="filter">Contact</button>
-        </nav>
-    </div>
-
-
-
-
+            <li>
+                <a href="Kontakt.html" style="text-decoration: none;">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
 
     <div id="splash">
         <div></div>
     </div>
 
-
-
-
-
     <script src="passion-java.js"></script>
-
-
-
-
 
     <!-------------------------------------------------------------------------------------------------->
 
+    <div id="myNav" class="overlay">
 
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
 
+        <span onclick="openNav()" class="openNav">FILTERS</span>
 
-
-    <div class="sectionwrapper">
-
-
-
-
-
-        <div class="nav">
+        <div class="filternav-content hide2">
             <button class="filter" data-kategori="alle">Alle</button>
             <button class="filter" data-kategori="Dyr">Dyr</button>
             <button class="filter" data-kategori="Realistisk">Realistisk</button>
@@ -98,26 +71,11 @@
         </div>
 
 
-
-
-
         <h1>Alle</h1>
-
-
-
-
 
         <!-------------------------------------------------------------------------------------------------->
 
-
-
-
-
         <section></section>
-
-
-
-
 
         <!-------------------------------------------------------------------------------------------------->
         <Section id="popup">
@@ -127,24 +85,21 @@
                 <div>
                     <h2></h2>
                     <h3></h3>
-                    <a class="instagram" href=""></a>
-                    <a class="youtube" href=""></a>
-                    <a class="giphy" href=""></a>
-                    <a class="website" href=""></a>
-                    <a class="shop" href=""></a>
-                    <h4>Cost: <span class="pris"></span></h4>
+                    <a class="instagram" href="">Instagram</a>
+                    <p></p>
+                    <a class="youtube" href="">YouTube</a>
+                    <p></p>
+                    <a class="giphy" href="">Giphy</a>
+                    <p></p>
+                    <a class="website" href="">Website</a>
+                    <p></p>
+                    <a class="shop" href="">Shop</a>
+                    <p>Price: <span class="pris"></span></p>
                 </div>
             </article>
         </Section>
 
-
-
-
-
         <!-------------------------------------------------------------------------------------------------->
-
-
-
 
 
         <template>
@@ -154,30 +109,23 @@
                     <img src="" alt="">
                 </div>
                 <p class="info"></p>
-                <h4 class="pris"></h4>
+                <h3 class="pris"></h3>
                 <!-- <p class="boomerang"></p> -->
             </article>
         </template>
     </div>
 
-
-
-
-
     <footer>
         <div id="footer">
             <div id="footer-contact">
                 <h3>Write us!</h3>
-
-                <a href="Kontakt.html"><img src="img/mail-icon.png" alt="mail icon" target="_blank" style="width:50px;height: 50px;"></a>
+                <p>E-mail us at</p><a href="mailto:contact@stickermania.com" target="_blank">contact@stickermania.com</a>
             </div>
             <div id="footer-follow">
                 <h3>Follow us!</h3>
-
-                <a href="www.facebook.com"><img src="img/facebook-icon.jpg" alt="facebook icon" target="_blank" style="width:42px;height:42px;"></a>
-                <a href="www.instagram.com"><img src="img/instagram-icon.jpg" target="_blank" alt="instagram icon" style="width:42px;height:42px;"></a>
-                <a href="www.linkedin.com"><img src="img/linkedin-icon.png" target="_blank" alt="linkedin icon" style="width:43px;height:43px;"></a>
-
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
             </div>
             <div id="footer-find-us">
                 <h3>Find us!</h3>
@@ -187,9 +135,6 @@
                     <p>Denmark</p>
                 </address>
             </div>
-
-
-
         </div>
     </footer>
 </body></html>
