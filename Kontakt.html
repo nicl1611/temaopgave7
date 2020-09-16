@@ -6,11 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Stickermania - contact</title>
+    <title>Stickermania ☺︎ contact</title>
 
     <link rel="stylesheet" href="passion-css.css">
 
-    <link rel="stylesheet" href="passion-css.css">
     <link rel="apple-touch-icon'" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -28,14 +27,15 @@
 </head>
 
 <body>
+    <!-- LOGO -->
     <div class="logo">
         <a href="passion-html.html">
             <img src="img/logo.png" alt="Logo">
         </a>
     </div>
 
+    <!-- BURGERMENU - VISES I MOBIL VERSION -->
     <nav>
-
         <div id="menuknap">☰</div>
         <ul id="menu" class="hide">
             <li>
@@ -52,43 +52,82 @@
         </ul>
     </nav>
 
+    <!-- MENU - VISES I DESKTOP VERSION -->
+    <div id="menu">
+        <nav>
+            <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
+            <button onclick="window.location.href='om.html';" class="filter">About</button>
+            <button onclick="window.location.href='Kontakt.html';" class="filter">Contact</button>
+        </nav>
+    </div>
+
+    <!-- SPLASHBILLEDE -->
     <div id="splash">
         <div></div>
     </div>
 
+    <!-- LINK TIL JAVASCRIPT FIL -->
     <script src="passion-java.js"></script>
-
-    <div id="splash">
-        <div></div>
-    </div>
-
-
 
     <!-------------------------------------------------------------------------------------------------->
     <div class="sectionwrapper">
 
         <h1>Contact</h1>
 
-        <h2>Open times</h2>
+        <article id="contactSection">
+            <div class="contact-txt">
+                <h2>Opening hours</h2>
+                <p>We're at the office everyday ready for a cup of coffee and a donut.</p>
+                <p>Come by!</p>
 
-        <p>Monday: 09:30 - 16:30</p>
-        <p>Tuesday: 08:00 - 17:00</p>
-        <p>Wednesday: 10:00 - 15:00</p>
-        <p>Thursday: 08:00 - 17:00</p>
-        <p>Friday: 09:30 - 16:30</p>
+                <p>Monday: 10:00 - 15:00</p>
+                <p>Tuesday: 10:00 - 15:00</p>
+                <p>Wednesday: 10:00 - 15:00</p>
+                <p>Thursday: 10:00 - 15:00</p>
+                <p>Friday: 10:00 - 15:00</p>
+                <p>Weekends: closed</p>
 
-        <h2>Telephone number</h2>
+                <h2>Write us!</h2>
+                <p>E-mail us at</p><a href="mailto:contact@stickermania.com" target="_blank">contact@stickermania.com</a>
+            </div>
 
-        <p>...</p>
+            <div class="contact-txt">
+                <h2>Find us!</h2>
+                <address>
+                    <p>Lygten 16</p>
+                    <p>2400 Copenhagen</p>
+                    <p>Denmark</p>
+                </address>
 
-        <h2>Email</h2>
-
-        <p>...</p>
-
-        <h2>Address</h2>
-
-        <p>...</p>
-
+                <!-- KODE TIL GOOGLE MAPS - LÅNT FRA GOOGLE  -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.000044773274!2d12.5369413154527!3d55.70637098054101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525248eb13378b%3A0xdccf089a0e12ec32!2sLygten%2016%2C%202400%20K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1600180967110!5m2!1sda!2sdk" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </article>
     </div>
 
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer">
+            <div id="footer-contact">
+                <h3>Write us!</h3>
+                <a href="Kontakt.html"><img src="img/mail-icon.png" alt="mail icon" target="_blank" style="width:50px;height: 50px;"></a>
+            </div>
+        </div>
+        <div id="footer-follow">
+            <h3>Follow us!</h3>
+            <a href="www.facebook.com"><img src="img/facebook-icon.jpg" alt="facebook icon" target="_blank" style="width:42px;height:42px;"></a>
+            <a href="www.instagram.com"><img src="img/instagram-icon.jpg" target="_blank" alt="instagram icon" style="width:42px;height:42px;"></a>
+            <a href="www.linkedin.com"><img src="img/linkedin-icon.png" target="_blank" alt="linkedin icon" style="width:43px;height:43px;"></a>
+        </div>
+        <div id="footer-find-us">
+            <h3>Find us!</h3>
+            <address>
+                <p>Lygten 16</p>
+                <p>2400 Copenhagen</p>
+                <p>Denmark</p>
+            </address>
+        </div>
+    </footer>
+
 </body></html>
+
