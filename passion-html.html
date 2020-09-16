@@ -2,24 +2,14 @@
 <html lang="en">
 
 
-
-
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-
-
     <title>Stickermania ☺︎ home</title>
 
-
-
-
-
     <link rel="stylesheet" href="passion-css.css">
+
     <link rel="apple-touch-icon'" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -36,19 +26,31 @@
     <link rel="manifest" href="img/favicons/manifest.json">
 </head>
 
-
-
-
-
 <body>
+    <!-- LOGO -->
     <div class="logo">
         <img src="img/logo.png" alt="Logo">
     </div>
 
+    <!-- BURGERMENU - VISES I MOBIL VERSION -->
+    <nav>
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hide">
+            <li>
+                <a href="passion-html.html" style="text-decoration: none;">HOME</a>
+            </li>
 
+            <li>
+                <a href="om.html" style="text-decoration: none;">ABOUT</a>
+            </li>
 
+            <li>
+                <a href="Kontakt.html" style="text-decoration: none;">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
 
-
+    <!-- MENU - VISES I DESKTOP VERSION -->
     <div id="menu">
         <nav>
             <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
@@ -57,36 +59,18 @@
         </nav>
     </div>
 
-
-
-
-
+    <!-- SPLASHBILLEDE -->
     <div id="splash">
         <div></div>
     </div>
 
-
-
-
-
+    <!-- LINK TIL JAVASCRIPT FIL -->
     <script src="passion-java.js"></script>
 
-
-
-
-
     <!-------------------------------------------------------------------------------------------------->
-
-
-
-
-
     <div class="sectionwrapper">
 
-
-
-
-
+        <!-- FILTRERING I FORM AF KNAPPER -->
         <div class="nav">
             <button class="filter" data-kategori="alle">Alle</button>
             <button class="filter" data-kategori="Dyr">Dyr</button>
@@ -96,29 +80,16 @@
             <button class="filter" data-kategori="Blomster">Blomster</button>
         </div>
 
-
-
-
-
+        <!-- H1 HVOR INDHOLDET SKIFTES UD ALT EFTER HVILKET FILTER, DER ER VALGT -->
         <h1>Alle</h1>
-
-
-
-
-
         <!-------------------------------------------------------------------------------------------------->
 
-
-
-
-
+        <!-- TOM SECTION, HVOR ALLE ELEMENTER BLIVER HENTET IND MED JSON -->
         <section></section>
 
-
-
-
-
         <!-------------------------------------------------------------------------------------------------->
+
+        <!-- POPUP VED SINGLE VIEW -->
         <Section id="popup">
             <article>
                 <button id="luk">X</button>
@@ -135,17 +106,8 @@
                 </div>
             </article>
         </Section>
-
-
-
-
-
         <!-------------------------------------------------------------------------------------------------->
-
-
-
-
-
+        <!-- TEMPLATE PÅ FORSIDEN MED LOOP VIEW -->
         <template>
             <article>
                 <h3 class="id"></h3>
@@ -159,10 +121,7 @@
         </template>
     </div>
 
-
-
-
-
+    <!-- FOOTER -->
     <footer>
         <div id="footer">
             <div id="footer-contact">
@@ -185,4 +144,6 @@
             </div>
         </div>
     </footer>
-</body></html>
+</body>
+
+</html>

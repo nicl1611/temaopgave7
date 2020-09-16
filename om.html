@@ -8,6 +8,7 @@
     <title>Stickermania ☺︎ about</title>
 
     <link rel="stylesheet" href="passion-css.css">
+
     <link rel="apple-touch-icon'" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -25,12 +26,14 @@
 </head>
 
 <body>
+    <!-- LOGO -->
     <div class="logo">
         <a href="passion-html.html">
             <img src="img/logo.png" alt="Logo">
         </a>
     </div>
 
+    <!-- BURGERMENU - VISES I MOBIL VERSION -->
     <nav>
         <div id="menuknap">☰</div>
         <ul id="menu" class="hide">
@@ -38,16 +41,6 @@
                 <a href="passion-html.html" style="text-decoration: none;">HOME</a>
             </li>
 
-        </ul>
-    </nav>
-
-    <div id="menu">
-
-        <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
-        <button onclick="window.location.href='om.html';" class="filter">About</button>
-        <button onclick="window.location.href='Kontakt.html';" class="filter">Contact</button>
-
-        <ul>
             <li>
                 <a href="om.html" style="text-decoration: none;">ABOUT</a>
             </li>
@@ -56,8 +49,18 @@
                 <a href="Kontakt.html" style="text-decoration: none;">CONTACT</a>
             </li>
         </ul>
+    </nav>
+
+    <!-- MENU - VISES I DESKTOP VERSION -->
+    <div id="menu">
+        <nav>
+            <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
+            <button onclick="window.location.href='om.html';" class="filter">About</button>
+            <button onclick="window.location.href='Kontakt.html';" class="filter">Contact</button>
+        </nav>
     </div>
 
+    <!-- SPLASHBILLEDE -->
     <splash class="splash">
         <div id="splash">
             <div></div>
@@ -91,6 +94,8 @@
                 </div>
             </article>
         </div>
+
+        <!-- FOOTER -->
         <footer>
             <div id="footer">
                 <div id="footer-contact">
@@ -113,5 +118,9 @@
                 </div>
             </div>
         </footer>
+
+        <!-- LINK TIL JAVASCRIPT FIL -->
         <script src="passion-java.js"></script>
-</body></html>
+</body>
+
+</html>
