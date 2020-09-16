@@ -1,3 +1,5 @@
+CSS
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -223,14 +225,14 @@ h3 {
 
 #menu li {
     display: inline-block;
-    padding-left: 50px;
-    padding-right: 25px
+
 }
 
 #menu li a {
     display: block;
     color: #111;
     text-align: center;
+    padding: 14px 60px;
     text-decoration: none;
     transition-duration: .4s;
     font-size: 16px;
@@ -384,270 +386,149 @@ section {
     padding: 50px;
 }
 
-/*---------------------------------------- Dropdown filterknapper -----------*/
-
-@media screen and (max-height: 450px) {
-    .filternav-content {
-        position: absolute;
-        top: 25%;
-        width: 80%;
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .closebtn {
-        position: absolute;
-        top: 40px;
-        right: 45px;
-        font-size: 10rem;
-    }
+.contact-txt {
+    flex-grow: 0.3;
+    flex-basis: 300px;
+    margin-left: 10%;
 }
 
-.hide2 {
-    opacity: 0;
-    transform: translateX(-100%);
+#contactSection p + h2 {
+    margin-top: 50px;
 }
 
-.openNav {
-    margin: 0;
-    position: absolute;
-    left: 50%;
+/***** KONTAKT SIDE *****/
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    transition-duration: .4s;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+h1 {
+    margin-left: 5px;
     margin-top: 10px;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%);
-    width: 40%;
-    border-top: solid 2px skyblue;
-    color: black;
-    font-family: monospace;
-    font-size: 1.4rem;
-    text-decoration: none;
-    font-weight: lighter;
-    cursor: pointer;
-    border: solid skyblue 1px;
-    text-align: center;
-    padding: 2px 2px 2px 2px;
-    transition-duration: .5s;
     margin-bottom: 10px;
 }
 
-.openNav:hover {
-    border-color: black;
-    opacity: 1;
-    background-color: aliceblue;
-    border-radius: 10px;
 
-    .contact-txt {
-        flex-grow: 0.3;
-        flex-basis: 300px;
-        margin-left: 10%;
-    }
 
-    #contactSection p + h2 {
-        margin-top: 50px;
-    }
+/*----------------------------------------------------------------------------------------------------------*/
 
-    /***** KONTAKT SIDE *****/
 
 
-    /*----------------------------------------------------------------------------------------------------------*/
+.filter {
+    display: flex;
+    flex-grow: 1;
+    background-color: skyblue;
+    border: none;
+    color: white;
+    padding: 3px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px 2px 5px 2px;
+    cursor: pointer;
+    transition-duration: .4s;
+    border: 1px solid skyblue;
+    border-radius: 3px;
+    font-family: monospace;
+}
 
 
 
-    .filternav-content {
-        display: flex;
-        flex-wrap: wrap;
-        transition-duration: .4s;
-    }
+.filter:hover {
+    background-color: white;
+    border: 1px solid skyblue;
+    color: black;
 
 
 
-    /*----------------------------------------------------------------------------------------------------------*/
+}
 
-    h1 {
-        margin-left: 5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
 
 
+/*----------------------------------------------------------------------------------------------------------*/
 
-    /*----------------------------------------------------------------------------------------------------------*/
 
+.valgt {
+    background-color: black;
+}
 
 
-    .filter {
-        display: flex;
-        flex-grow: 1;
-        background-color: skyblue;
-        border: none;
-        color: white;
-        padding: 3px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 25px 2px 5px 2px;
-        cursor: pointer;
-        transition-duration: .4s;
-        border: 1px solid skyblue;
-        border-radius: 3px;
-        font-family: monospace;
-    }
 
+/*----------------------------------------------------------------------------------------------------------*/
 
 
-    .filter:hover {
-        background-color: white;
-        border: 1px solid skyblue;
-        color: black;
 
+#popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
 
 
-    }
 
+#popup article {
+    width: 70vw;
+    height: 50vh;
+    margin: 10rem auto;
+    background-color: white;
+    display: flex;
+    position: relative;
+}
 
 
-    /*----------------------------------------------------------------------------------------------------------*/
 
+#popup img {
+    max-width: 50%;
+}
 
-    .valgt {
-        background-color: black;
-    }
 
 
+#popup div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-    /*----------------------------------------------------------------------------------------------------------*/
 
 
+/*----------------------------------------------------------------------------------------------------------*/
 
-    #popup {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, .8);
-        display: none;
-    }
 
 
-
-    #popup article {
-        width: 70vw;
-        height: 50vh;
-        margin: 10rem auto;
-        background-color: white;
-        display: flex;
-        position: relative;
-    }
-
-
-
-    #popup img {
-        max-width: 50%;
-        object-fit: contain;
-    }
-
-
-
-    #popup div {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-
-    /*--------------------------------------------- BURGERMENU -------------------------------------------------*/
-
-
-
-    @media (min-width:600px) {
-        #menuknap {
-            display: none;
-        }
-
-
-        #menu.hide {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        #menu li {
-            display: inline-block;
-        }
-    }
-
-
-    .hide {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    #menuknap {
-        color: black;
-        font-size: 1.5rem;
-
-    }
-
-    #menu {
-        margin-top: 25px;
-        list-style-type: none;
-        transition: transform 0.4s;
-        transform-origin: top left;
-        margin: 0;
-        padding: 10px 10px;
-        border-top: solid 1px skyblue;
-        width: 100%;
-    }
-
-    a {
-        color: black;
-        font-family: monospace;
-        font-size: 1.4rem;
-        text-decoration: none;
-        font-weight: lighter;
-        opacity: 0.5;
-    }
-
-    a:hover {
-        border-bottom: solid skyblue 2px;
-        opacity: 1;
-
-    }
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        text-align: center;
-        flex-direction: row;
-        text-decoration: none;
-    }
-
-
-
-
-    /*----------------------------------------------------------------------------------------------------------*/
-
-
-    #luk {
-        position: absolute;
-        top: 1.5rem;
-        right: 0rem;
-        background-color: #C1272D;
-        color: white;
-        border: none;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 3px 5px 0px 10px;
-        border-radius: 3px;
-
-    }
-
-
-
-    #luk:hover {
-        box-shadow: 0px 0px 3px 0px #C1272D;
-    }
+#luk {
+    position: absolute;
+    top: 1.5rem;
+    right: 0rem;
+    background-color: #C1272D;
+    color: white;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 40px 4px 2px;
+    border-radius: 3px;
+}
+
+
+
+#luk:hover {
+    opacity: 0.6;
+}

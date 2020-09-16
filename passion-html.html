@@ -1,110 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
+
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Stickermania ☺︎ home</title>
+        <title>Stickermania ☺︎ home</title>
+
 
     <link rel="stylesheet" href="passion-css.css">
+
     <link rel="apple-touch-icon'" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+
     <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+
     <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+
     <link rel="manifest" href="img/favicons/manifest.json">
 </head>
 
+
 <body>
-    <div class="logo">
-        <img src="img/logo.png" alt="Logo">
-    </div>
+        <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
 
 
-    <nav>
+            <nav>
+                    <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
+                    <button onclick="window.location.href='om.html';" class="filter">About</button>
+                    <button onclick="window.location.href='Kontakt.html';" class="filter">Contact</button>
+                </nav>
+        </div>
 
-        <div id="menuknap">☰</div>
-        <ul id="menu" class="hide">
-            <li>
-                <a href="passion-html.html" style="text-decoration: none;">HOME</a>
-            </li>
+        <div id="splash">
+                <div></div>
+            </div>
 
-            <li>
-                <a href="om.html" style="text-decoration: none;">ABOUT</a>
-            </li>
+        <script src="passion-java.js"></script>
 
-            <li>
-                <a href="Kontakt.html" style="text-decoration: none;">CONTACT</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div id="menu">
-        <nav>
-            <button onclick="window.location.href='passion-html.html';" class="filter">Home</button>
-            <button onclick="window.location.href='om.html';" class="filter">About</button>
-            <button onclick="window.location.href='Kontakt.html';" class="filter">Contact</button>
-        </nav>
-    </div>
-
-    <div id="splash">
-        <div></div>
-    </div>
-
-    <script src="passion-java.js"></script>
 
     <!-------------------------------------------------------------------------------------------------->
 
-    <div id="myNav" class="overlay">
+        <div class="sectionwrapper">
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+                <div class="nav">
+                        <button class="filter" data-kategori="alle">Alle</button>
+                        <button class="filter" data-kategori="Dyr">Dyr</button>
+                        <button class="filter" data-kategori="Realistisk">Realistisk</button>
+                        <button class="filter" data-kategori="Holografisk">Holografisk</button>
+                        <button class="filter" data-kategori="Kærlighed">Kærlighed</button>
+                        <button class="filter" data-kategori="Blomster">Blomster</button>
+                    </div>
 
-        <span onclick="openNav()" class="openNav">FILTERS</span>
+                <h1>Alle</h1>
 
-        <div class="filternav-content hide2">
-            <button class="filter" data-kategori="alle">Alle</button>
-            <button class="filter" data-kategori="Dyr">Dyr</button>
-            <button class="filter" data-kategori="Realistisk">Realistisk</button>
-            <button class="filter" data-kategori="Holografisk">Holografisk</button>
-            <button class="filter" data-kategori="Kærlighed">Kærlighed</button>
-            <button class="filter" data-kategori="Blomster">Blomster</button>
-        </div>
-
-
-        <h1>Alle</h1>
 
         <!-------------------------------------------------------------------------------------------------->
 
-        <section></section>
+                <section></section>
+
 
         <!-------------------------------------------------------------------------------------------------->
-        <Section id="popup">
-<<<<<<< HEAD
-            <article>
-                <button id="luk">X</button>
-                <img src="" alt="">
-                <div>
-                    <h2></h2>
-                    <h3></h3>
-                    <a class="instagram" href=""></a>
-                    <a class="youtube" href=""></a>
-                    <a class="giphy" href=""></a>
-                    <a class="website" href=""></a>
-                    <a class="shop" href=""></a>
-                    <h4>Cost: <span class="pris"></span></h4>
-                </div>
-            </article>
-        </Section>
-=======
+                <Section id="popup">
                         <article>
                                 <button id="luk">X</button>
                                 <img src="" alt="">
@@ -120,42 +101,46 @@
                                     </div>
                             </article>
                     </Section>
->>>>>>> origin/master
+
 
         <!-------------------------------------------------------------------------------------------------->
-        <template>
-            <article>
-                <h3 class="id"></h3>
-                <div class="zoom">
-                    <img src="" alt="">
-                </div>
-                <p class="info"></p>
-                <h4 class="pris"></h4>
-                <!-- <p class="boomerang"></p> -->
-            </article>
-        </template>
-    </div>
 
-    <footer>
-        <div id="footer">
-            <div id="footer-contact">
-                <h3>Write us!</h3>
-                <p>E-mail us at</p><a href="mailto:contact@stickermania.com" target="_blank">contact@stickermania.com</a>
-            </div>
-            <div id="footer-follow">
-                <h3>Follow us!</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-            </div>
-            <div id="footer-find-us">
-                <h3>Find us!</h3>
-                <address>
-                    <p>Lygten 16</p>
-                    <p>2400 Copenhagen</p>
-                    <p>Denmark</p>
-                </address>
-            </div>
-        </div>
-    </footer>
-</body></html>
+                <template>
+                        <article>
+                                <h3 class="id"></h3>
+                                <div class="zoom">
+                                        <img src="" alt="">
+                                    </div>
+                                <p class="info"></p>
+                                <h4 class="pris"></h4>
+
+                <!-- <p class="boomerang"></p> -->
+                            </article>
+                    </template>
+            </div>
+
+        <footer>
+                <div id="footer">
+                        <div id="footer-contact">
+                                <h3>Write us!</h3>
+                                <p>E-mail us at</p><a href="mailto:contact@stickermania.com" target="_blank">contact@stickermania.com</a>
+                            </div>
+                        <div id="footer-follow">
+                                <h3>Follow us!</h3>
+                                <a href="#">Facebook</a>
+                                <a href="#">Instagram</a>
+                                <a href="#">LinkedIn</a>
+                            </div>
+                        <div id="footer-find-us">
+                                <h3>Find us!</h3>
+                                <address>
+                                        <p>Lygten 16</p>
+                                        <p>2400 Copenhagen</p>
+                                        <p>Denmark</p>
+                                    </address>
+                            </div>
+                    </div>
+            </footer>
+</body>
+
+</html>
