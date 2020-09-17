@@ -80,8 +80,6 @@ function vis(sticker) {
         // gør så at man kan se alle kategori + så man kan filtere efter kategorier //
         if (filter == "alle" || filter == person.gsx$kategori.$t) {
 
-            console.log(person);
-
             // fortæller at klon er lig templatepointer //
             const klon = templatePointer.cloneNode(true).content;
 
