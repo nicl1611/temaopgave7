@@ -32,9 +32,9 @@ async function loadJSON() {
 
     addEventListenersToButons();
 
-    vis(sticker);
+    //vis(sticker);
 
-    document.querySelector("#luk").addEventListener("click", () => popup.style.display = "none");
+    //document.querySelector("#luk").addEventListener("click", () => popup.style.display = "none");
 
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 }
