@@ -234,7 +234,7 @@ article:hover {
 /***** LOGO *****/
 
 .logo {
-    width: 10%;
+    width: 15vw;
     margin: 0 auto;
     transition-duration: 2s;
 }
@@ -429,63 +429,6 @@ a.facebook:hover {
 
 /***** MEDIA QUERIES *****/
 
-/***** DROPDOWN FILTERKNAPPER *****/
-@media screen and (max-height: 450px) {
-    .filternav-content {
-        position: absolute;
-        top: 25%;
-        width: 80%;
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .closebtn {
-        position: absolute;
-        top: 40px;
-        right: 45px;
-        font-size: 10rem;
-    }
-}
-
-.hide2 {
-    opacity: 0;
-    transform: translateX(-100%);
-}
-
-.openNav {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    margin-top: 10px;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%);
-    width: 40%;
-    border-top: solid 2px skyblue;
-    color: black;
-    font-family: monospace;
-    font-size: 1.4rem;
-    text-decoration: none;
-    font-weight: lighter;
-    cursor: pointer;
-    border: solid skyblue 1px;
-    text-align: center;
-    padding: 2px 2px 2px 2px;
-    transition-duration: .5s;
-    margin-bottom: 10px;
-}
-
-.openNav:hover {
-    border-color: black;
-    opacity: 1;
-    background-color: aliceblue;
-    border-radius: 10px;
-}
-
-.filternav-content {
-    display: flex;
-    flex-wrap: wrap;
-    transition-duration: .4s;
-}
 
 /***** BURGERMENU *****/
 @media (min-width:600px) {
