@@ -165,7 +165,7 @@ footer {
     display: block;
     color: #111;
     text-align: center;
-    padding: 14px 60px;
+    padding: .1px 25px;
     text-decoration: none;
     transition-duration: .4s;
     font-size: 16px;
@@ -174,8 +174,8 @@ footer {
 }
 
 #menu li a:hover {
-    background-color: skyblue;
-    color: white;
+    border-bottom: skyblue 1px solid;
+    color: black;
 }
 
 /***** SPLASH *****/
