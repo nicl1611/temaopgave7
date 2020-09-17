@@ -283,20 +283,20 @@ section {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    padding: 50px;
+    padding: 25px;
 }
 
 .contact-txt {
     flex-grow: 0.3;
     flex-basis: 300px;
-    margin-left: 10%;
+    margin-bottom: 25px;
 }
 
 .contact-txt2 {
     flex-grow: 0.3;
     flex-basis: 300px;
-    margin-left: 10%;
-    margin-top: 60px;
+    margin-left: 5%;
+    margin-bottom: 25px;
 }
 
 #contactSection p + h2 {
@@ -429,6 +429,15 @@ a.facebook:hover {
 
 /***** MEDIA QUERIES *****/
 
+/***** Contact *****/
+@media (max-width: 900px) {
+    .contact-txt2 {
+        flex-grow: 0.3;
+        flex-basis: 300px;
+        margin-left: 0%;
+        margin-bottom: 25px;
+    }
+}
 
 /***** BURGERMENU *****/
 @media (min-width:600px) {
