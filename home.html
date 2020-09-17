@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Stickermania ☺︎ about</title>
+    <title>Stickermania ☺︎ home</title>
 
-    <link rel="stylesheet" href="passion-css.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="apple-touch-icon'" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -28,9 +29,7 @@
 <body>
     <!-- LOGO -->
     <div class="logo">
-        <a href="passion-html.html">
-            <img src="img/logo.png" alt="Logo">
-        </a>
+        <img src="img/logo.png" alt="Logo">
     </div>
 
     <!-- BURGERMENU - VISES I MOBIL VERSION -->
@@ -38,52 +37,84 @@
         <div id="menuknap">☰</div>
         <ul id="menu" class="hide">
             <li>
-                <a href="passion-html.html" style="text-decoration: none;">HOME</a>
+                <a class="menu_valgt" href="home.html" style="text-decoration: none;">HOME</a>
             </li>
 
             <li>
-                <a class="menu_valgt" href="om.html" style="text-decoration: none;">ABOUT</a>
+                <a href="about.html" style="text-decoration: none;">ABOUT</a>
             </li>
 
             <li>
-                <a href="Kontakt.html" style="text-decoration: none;">CONTACT</a>
+                <a href="contact.html" style="text-decoration: none;">CONTACT</a>
             </li>
         </ul>
     </nav>
 
     <!-- SPLASHBILLEDE -->
-
     <div id="splash">
         <div></div>
     </div>
-    <!------------------------------------------------------------------------->
+
+    <!-- LINK TIL JAVASCRIPT FIL -->
+    <script src="java.js"></script>
+
+    <!-------------------------------------------------------------------------------------------------->
     <div class="sectionwrapper">
-        <h1>About Sticker Mania</h1>
-        <article id="omSection">
-            <div class="photo">
-                <img src="img/om/IMG_5052.jpg" alt="About Stickermania image">
-                <img src="img/om/IMG_5054.jpg" alt="About Stickermania image">
-                <img src="img/om/IMG_5158.jpg" alt="About Stickermania image">
-            </div>
-            <div class="txt">
-                <p>We are four enthusiasts who are really happy with stickers in all shapes and sizes.</p>
 
-                <p>It started as a hobby but has quickly become a bigger passion as we found out how big a community there actually is within stickers.</p>
+        <!-- FILTRERING I FORM AF KNAPPER -->
+        <div class="nav">
+            <button class="filter" data-kategori="alle">All</button>
+            <button class="filter" data-kategori="Animals">Animals</button>
+            <button class="filter" data-kategori="Magic">Magic</button>
+            <button class="filter" data-kategori="Mixed">Mixed</button>
+            <button class="filter" data-kategori="Nature">Nature</button>
+            <button class="filter" data-kategori="Sheet">Sheet</button>
+        </div>
 
-                <p>These are our own collections, which we share here on the site.</p>
+        <!-- H1 HVOR INDHOLDET SKIFTES UD ALT EFTER HVILKET FILTER, DER ER VALGT -->
+        <h1>All</h1>
+        <!-------------------------------------------------------------------------------------------------->
 
-                <p>We have bought and paid for all the stickers ourselves, nothing is sponsored (unless otherwise stated) and we have taken all the pictures and written all the texts ourselves.</p>
+        <!-- TOM SECTION, HVOR ALLE ELEMENTER BLIVER HENTET IND MED JSON -->
+        <section></section>
 
-                <p>The goal of our site is to create more awareness around handmade stickers and the small shops with self-employed people around the world. Especially during the Covid-19 Pandemic it is important to support locally.</p>
+        <!-------------------------------------------------------------------------------------------------->
 
-                <p>We hope you find some artists on this page that you will support.</p>
-
-                <div class="greeting">
-                    <h3>Love</h3><img src="img/greeting.gif" alt="Stickermania greeting as a gif">
+        <!-- POPUP VED SINGLE VIEW -->
+        <Section id="popup">
+            <article>
+                <button id="luk">X</button>
+                <img src="" alt="">
+                <div>
+                    <h2></h2>
+                    <h3></h3>
+                    <a class="instagram" href="" target="_blank"></a>
+                    <p></p>
+                    <a class="youtube" href="" target="_blank"></a>
+                    <p></p>
+                    <a class="giphy" href="" target="_blank"></a>
+                    <p></p>
+                    <a class="website" href="" target="_blank"></a>
+                    <p></p>
+                    <a class="shop" href="" target="_blank"></a>
+                    <p></p>
+                    <h4>Cost: <span class="pris"></span></h4>
                 </div>
-
-            </div>
-        </article>
+            </article>
+        </Section>
+        <!-------------------------------------------------------------------------------------------------->
+        <!-- TEMPLATE PÅ FORSIDEN MED LOOP VIEW -->
+        <template>
+            <article>
+                <h3 class="id"></h3>
+                <div class="zoom">
+                    <img src="" alt="">
+                </div>
+                <p class="info"></p>
+                <h4 class="pris"></h4>
+                <!-- <p class="boomerang"></p> -->
+            </article>
+        </template>
     </div>
 
     <!-- FOOTER -->
@@ -109,9 +140,6 @@
             </address>
         </div>
     </footer>
+</body>
 
-    <!-- LINK TIL JAVASCRIPT FIL -->
-    <script src="passion-java.js"></script>
-
-
-</body></html>
+</html>
