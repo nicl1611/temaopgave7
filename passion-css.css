@@ -101,7 +101,7 @@ a:active {
 /***** FOOTER *****/
 
 footer {
-    height: 200px;
+    height: 600px;
     padding: 10px;
     border: 1px solid #ffffff;
     margin: 10px;
@@ -300,6 +300,8 @@ iframe {
     left: 0;
     bottom: 0;
     right: 0;
+    width: 100%;
+    height: 50%;
 }
 
 /***** NAVIGATION *****/
