@@ -176,9 +176,16 @@ footer {
 }
 
 #menu li a:hover {
-    border-bottom: skyblue 1px solid;
+    border-bottom: skyblue 2px solid;
     color: black;
 }
+
+
+.menu_valgt {
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    color: black;
+}
+
 
 /***** SPLASH *****/
 
@@ -502,7 +509,7 @@ a {
     font-size: 1.4rem;
     text-decoration: none;
     font-weight: lighter;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 a:hover {
