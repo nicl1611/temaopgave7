@@ -283,6 +283,13 @@ section {
     margin-left: 10%;
 }
 
+.contact-txt2 {
+    flex-grow: 0.3;
+    flex-basis: 300px;
+    margin-left: 10%;
+    margin-top: 60px;
+}
+
 #contactSection p + h2 {
     margin-top: 50px;
 }
