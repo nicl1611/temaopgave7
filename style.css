@@ -456,6 +456,7 @@ a.facebook:hover {
     color: black;
     font-size: 1.5rem;
     padding-left: 6px;
+    cursor: pointer;
 }
 
 #menu {
