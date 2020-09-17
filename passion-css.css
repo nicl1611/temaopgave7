@@ -101,18 +101,14 @@ a:active {
 /***** FOOTER *****/
 
 footer {
+
     height: 600px;
     padding: 10px;
     border: 1px solid #ffffff;
     margin: 10px;
     background-color: skyblue;
-}
-
-#footer {
-    display: flex;
     width: 80%;
     margin: 0 auto;
-    justify-content: space-between;
 }
 
 #footer-contact a:link,
@@ -124,7 +120,7 @@ footer {
     font-size: 1em;
     line-height: 1.8em;
     color: rgb(64, 64, 64);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     display: block;
     text-transform: none;
 }
@@ -134,14 +130,17 @@ footer {
     color: #000000;
 }
 
-#footer-contact a:hover,
-#footer-follow a:hover {
-    text-decoration: underline;
-}
-
 #footer-contact a:active,
 #footer-follow a:active {
     color: #ffffff;
+}
+
+#footer-follow a {
+    width: 42px;
+}
+
+#footer-contact a {
+    width: 44px;
 }
 
 /***** MENU *****/
